@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+
+/* Header Styles */
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  animation: fade-in 1s;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav {
+  list-style: none;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+}
+
+section p {
+  line-height: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover Effect */
+header nav a:hover {
+  color: #ccc;
+}
+
+/* Interactive Elements */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  padding: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-close::before {
+  content: '×';
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Open Modal */
+.open-modal {
+  cursor: pointer;
+}
+
+/* Close Modal */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close-modal::before {
+  content: '×';
+  font-size: 20px;
+  line-height: 1;
+}
